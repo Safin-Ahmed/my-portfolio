@@ -55,7 +55,7 @@ ul.nav {
     }
     ul.mobile-nav {
         flex-direction: row;
-        top: 10%;
+        top: 30%;
         position: absolute;
         display: flex;
         justify-content: center;

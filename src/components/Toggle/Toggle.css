@@ -30,3 +30,8 @@
 .dark {
     color: black !important;
 }
+@media screen and (max-width: 480x) {
+    .t {
+        right: 30px;
+    }
+}
