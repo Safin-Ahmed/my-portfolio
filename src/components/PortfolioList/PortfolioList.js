@@ -6,7 +6,7 @@ const PortfolioList = () => {
     return (
         <div className="pl">
             <div className="pl-texts">
-                <h1 className="pl-title">Premium is what I belive in</h1>
+                <h1 className="pl-title">Premium is what I believe in</h1>
                 <p className="pl-desc">
                     This is a creative portfolio that your work has been waiting for.
                     Beautiful stores, stunning portfolio styles and a whole lot more awaits

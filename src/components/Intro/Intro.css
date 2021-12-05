@@ -93,10 +93,12 @@
     }
     .intro-left-wrapper {
         padding: 10px;
+        padding-top: 70px;
         align-items: center;
         justify-content: center;
         text-align: center;
         height: 100%;
+        gap: 15px;
     }
     .job-desc {
         display: none;

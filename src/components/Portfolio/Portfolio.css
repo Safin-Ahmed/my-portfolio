@@ -6,6 +6,29 @@
     border: 2px solid rgb(243, 242, 242);
     border-radius: 10px 10px 0 0 ;
     overflow: hidden;
+    position: relative;
+}
+.bg-overlay {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #59b25685;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    opacity: 0;
+    z-index: 9999;
+    transition: all 0.4s ease-in-out;
+}
+.p:hover .bg-overlay {
+    opacity: 1;
+}
+.project-icon {
+    font-size: 35px;
 }
 .p-browser {
     position: sticky;
@@ -27,7 +50,7 @@
     transition: all 10s ease;
 }
 .p:hover .p-img {
-    transform: translateY(-100%);
+    transform: translateY(-80%);
 }
 @media screen and (max-width: 480px){
    .p {
