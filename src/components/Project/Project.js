@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router';
 import { products } from '../../data';
+import Resume from '../Resume/Resume';
 import './Project.css';
 const Project = () => {
     let params = useParams();
@@ -9,6 +10,7 @@ const Project = () => {
     console.log(singleProject);
     return (
         <div className="project-section" style={{ marginTop: '200px', display: 'flex', alignItems: 'start' }}>
+            <Resume />
             <div className="project-container">
                 <h1 className="title">{singleProject.title}</h1>
                 <div className="project-details">

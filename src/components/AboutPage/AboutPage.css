@@ -1,0 +1,8 @@
+@media screen and (max-width: 480px) {
+    .about-page {
+        margin-top: 200px;
+    }
+    .about-left {
+        flex: inherit;
+    } 
+}

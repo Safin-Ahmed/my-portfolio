@@ -1,9 +1,11 @@
 import React from 'react';
+import Resume from '../Resume/Resume';
 import './Blogs.css';
 const Blogs = () => {
     return (
-        <div>
-            This is my blogs
+        <div className="blogs">
+            <Resume />
+            Blogs are coming soon.
         </div>
     );
 };

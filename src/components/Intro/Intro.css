@@ -91,6 +91,9 @@
         flex-direction: column;
         margin-top: 40px;
     }
+    .intro-left {
+        margin-top: 50px !important;
+    }
     .intro-left-wrapper {
         padding: 10px;
         padding-top: 70px;
