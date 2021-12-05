@@ -61,6 +61,10 @@
     .project-mockups{
         flex-wrap: wrap;
     }
+    .single-feature{
+        width: 100%;
+        flex-basis: 100%;
+    }
     .project-mockups img {
         width: 100%;
         height: 200px;
