@@ -24,7 +24,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          setDone(true);
+          alert("Thank You! I will get back to you as soon as possible");
           formRef.current.reset();
         },
         (error) => {
@@ -100,8 +100,6 @@ const Contact = () => {
               name="message"
             ></textarea>
             <button className="contact-btn">Submit</button>
-            {done &&
-              alert("Thank You! I will get back to you as soon as possible")}
           </form>
         </div>
       </div>
