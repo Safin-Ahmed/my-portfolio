@@ -1,112 +1,154 @@
 .intro {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
-.intro-left{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.intro-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.intro-left-wrapper{
-    padding: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 40%;
+.intro-left-wrapper {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 52%;
 }
-.intro-right{
-    flex: 1;
-    position: relative;
+.intro-right {
+  flex: 1;
+  position: relative;
 }
 .intro-title {
-    font-size: 30px;
-    font-weight: 300;
+  font-size: 30px;
+  font-weight: 300;
 }
 .intro-name {
-    font-size: 60px;
+  font-size: 60px;
 }
 .job-title {
-    height: 50px;
-    overflow: hidden;
-    
+  height: 70px;
+  overflow: hidden;
 }
 .job-title-wrapper {
-    height: 100%;
-    animation: move 10s ease-in-out infinite alternate;
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
 }
 @keyframes move {
-    25%{
-        transform: translateY(-50px);
-    }
-    50%{
-        transform: translateY(-100px);
-    }
-    75%{
-        transform: translateY(-150px);
-    }
-    100%{
-        transform: translateY(-200px);
-    }
+  25% {
+    transform: translateY(-70px);
+  }
+  50% {
+    transform: translateY(-140px);
+  }
+  75% {
+    transform: translateY(-210px);
+  }
+  100% {
+    transform: translateY(-280px);
+  }
 }
 .job-title-item {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #59b256;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: #59b256;
 }
 .intro-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 .intro-bg {
-    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
-    background-color: #59b256;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  background-color: #59b256;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .job-desc p {
-    font-size: 18px;
+  font-size: 27px;
 }
 .intro-scroll {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    bottom: 20px;
-    transition: all 0.5s ease-in-out;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  transition: all 0.5s ease-in-out;
 }
 .intro-scroll:hover {
-    transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
 @media screen and (max-width: 480px) {
-    .intro {
-        flex-direction: column;
-        margin-top: 40px;
-    }
-    .intro-left {
-        margin-top: 50px !important;
-    }
-    .intro-left-wrapper {
-        padding: 10px;
-        padding-top: 70px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 100%;
-        gap: 15px;
-    }
-    .job-desc {
-        display: none;
-    }
-    .job-title-item {
-        justify-content: center;
-    }
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro-left-wrapper {
+    padding: 10px;
+    padding-top: 70px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    gap: 15px;
+  }
+  .job-desc {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .job-title-item {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .intro-left-wrapper {
+    height: 60%;
+  }
+  .intro-name {
+    font-size: 42px;
+  }
+  .job-title-item {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .intro-left-wrapper {
+    height: 50%;
+  }
+  .intro-name {
+    font-size: 45px;
+  }
+  .job-title-item {
+    font-size: 30px;
+  }
+  .job-desc p {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .intro-left-wrapper {
+    height: 60%;
+  }
+  .intro-right {
+    display: none;
+  }
+  .intro-name {
+    font-size: 45px;
+  }
+  .job-title-item {
+    font-size: 30px;
+  }
+  .job-desc p {
+    font-size: 25px;
+  }
 }
