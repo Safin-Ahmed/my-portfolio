@@ -4,7 +4,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import "./PortfolioList.css";
 const PortfolioList = () => {
   return (
-    <div className="pl">
+    <div id="my-portfolio" className="pl">
       <div className="pl-texts">
         <h1 className="pl-title">Premium is what I believe in</h1>
         <p className="pl-desc">

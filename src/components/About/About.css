@@ -64,6 +64,9 @@
     height: 100%;
     padding: 3rem 0;
   }
+  .about-card {
+    height: auto;
+  }
   .about-left {
     width: 100%;
   }

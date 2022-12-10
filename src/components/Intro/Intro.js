@@ -13,7 +13,7 @@ const Intro = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="intro">
+    <div id="my-intro" className="intro">
       <div className="intro-left">
         <div className="intro-left-wrapper">
           <h2 className="intro-title">Hello, My name is</h2>

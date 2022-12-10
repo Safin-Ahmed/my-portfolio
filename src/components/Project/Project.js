@@ -1,7 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
 import { products } from "../../data";
-import Resume from "../Resume/Resume";
 import "./Project.css";
 const Project = () => {
   let params = useParams();
@@ -11,7 +10,7 @@ const Project = () => {
   return (
     <div
       className="project-section"
-      style={{ marginTop: "200px", display: "flex", alignItems: "start" }}
+      style={{ marginTop: "2rem", display: "flex", alignItems: "start" }}
     >
       <div className="project-container">
         <h1 className="title">{singleProject.title}</h1>
@@ -48,26 +47,24 @@ const Project = () => {
         </div>
         <div className="actions">
           {singleProject.gitClient && (
-            <button>
-              <a href={singleProject.gitClient} target="_blank"></a>Git Client
-              Repo
-            </button>
+            <a href={singleProject.gitClient} target="_blank">
+              <button>Git Client Repo</button>
+            </a>
           )}
           {singleProject.gitLink && (
-            <button>
-              <a href={singleProject.gitLink} target="_blank"></a>Git Repo
-            </button>
+            <a href={singleProject.gitLink} target="_blank">
+              <button>Git Repo</button>
+            </a>
           )}
           {
-            <button>
-              <a href={singleProject.link} target="_blank"></a>View Live
-            </button>
+            <a href={singleProject.link} target="_blank">
+              <button>View Live</button>
+            </a>
           }
           {singleProject.gitServer && (
-            <button>
-              <a href={singleProject.gitServer} target="_blank"></a>Git Server
-              Repo
-            </button>
+            <a href={singleProject.gitServer} target="_blank">
+              <button>Git Server Repo</button>
+            </a>
           )}
         </div>
       </div>

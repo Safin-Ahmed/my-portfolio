@@ -4,6 +4,7 @@ import {
   BsFillTelephoneFill,
   BsFillEnvelopeFill,
   BsFillGeoAltFill,
+  BsGithub,
 } from "react-icons/bs";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../Context";
@@ -33,7 +34,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className="c">
+    <div id="my-contact" className="c">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left" style={{ color: darkMode ? "#fff" : "#000" }}>
@@ -46,6 +47,10 @@ const Contact = () => {
             <div className="c-info-item">
               <BsFillEnvelopeFill className="c-icon" />{" "}
               safin.ahmed2000@gmail.com
+            </div>
+            <div className="c-info-item">
+              <BsGithub className="c-icon" />
+              Safin-Ahmed
             </div>
 
             <div className="c-info-item">

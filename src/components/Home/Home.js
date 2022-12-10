@@ -1,22 +1,22 @@
-import React from 'react';
-import About from '../About/About';
-import Contact from '../Contact/Contact';
-import Intro from '../Intro/Intro';
-import PortfolioList from '../PortfolioList/PortfolioList';
-import Resume from '../Resume/Resume';
-import Toggle from '../Toggle/Toggle';
+import { KeyboardArrowUp } from "@mui/icons-material";
+import { Fab, Toolbar } from "@mui/material";
+import React from "react";
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Intro from "../Intro/Intro";
+import PortfolioList from "../PortfolioList/PortfolioList";
+import Skills from "../Skills/Skills";
 
 const Home = () => {
-    return (
-        <div>
-            <Resume />
-            <Toggle />
-            <Intro></Intro>
-            <About></About>
-            <PortfolioList></PortfolioList>
-            <Contact></Contact>
-        </div>
-    );
+  return (
+    <div>
+      <Intro></Intro>
+      <About></About>
+      <Skills />
+      <PortfolioList></PortfolioList>
+      <Contact></Contact>
+    </div>
+  );
 };
 
 export default Home;

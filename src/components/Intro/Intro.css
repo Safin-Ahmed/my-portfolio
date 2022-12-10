@@ -92,7 +92,7 @@
 
   .intro-left-wrapper {
     padding: 10px;
-    padding-top: 70px;
+
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -114,6 +114,9 @@
   }
   .intro-name {
     font-size: 42px;
+  }
+  .intro-bg {
+    display: none;
   }
   .job-title-item {
     font-size: 45px;
